@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+	p{
+		font-size: 30px;
+		font-family: 궁서체,굴림체;
+	}
+	span{
+		background-color: antiquewhite;
+	}
+	div{
+		border: 20px solid blue; 
+	}
