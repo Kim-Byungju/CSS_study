@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<Style>
+	/* 인접선택자만사용하여구현 */
+	h1{
+		color: black;
+	}
+	h1+h2{
+		color: blue;
+	}
+	h1+h2+h3{
+		color: red;
+	}
+	#a{
+		color: black;
+	}
+	#a+li{
+		color: yellowgreen;
+	}
+	h1+h2+h3+ul+P{
+		color: skyblue;
+	}
+	h1+h2+h3+ul+P+P{
+		color: red;
+	}
+</Style>
+
+</head>
+<body>
+	<h1>엑스포안내</h1>
+	<h2>책자를배부하고있습니다.</h2>
+	<h3>안내데스크를 활용하기바랍니다</h3>
+
+	<ul>
+		<li id="a">1번</li>
+		<li>2번</li>
+	</ul>
+	<p>3번</p>
+	<p>4번</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.h3{color: blue;}
+	.div{background-color: yellowgreen;}
+	.div >ul >h4{background-color: lightgray;}
+	#list1{background-color: lightgray;
+			border: solid 5px black;
+	}
+	#list1 >li {background-color: black;
+				color: white;
+	}	
+	.a{background-color: black;}
+
+</style>
+</head>
+<body>
+	<h3 class="h3">학습과목</h3>
+	<div class="div">
+		<ul>
+			<h4>HTML</h4>
+			<ol id="list1">
+			<li>HTML5개요</li>
+			<li class="a">문서만들기</li>
+			<li>구조화와폼</li>
+			</ol>
+		
+		<h4>CSS</h4>
+		<ol id="list2">
+			<li>웹페이지꾸미기</li>
+			<li>고급<span>활용</span></li>
+		</ol>
+		</ul>
+		<ul>
+			<h4>JAVASCRIPT</h4>
+		<ol id="list3">
+			<li class="b">자바스크립트언어</li>
+			<li class="c">코어객체와배열</li>
+			<li class="d">Document</li>
+		</ol>
+		</ul>
+	</div>
+	<div id="etc">
+		<p>웹프로그래밍을 학습합니다.</p>
+	</div>
+</body>
+</html>
