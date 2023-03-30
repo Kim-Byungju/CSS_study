@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+	word-wrap
+		;영믄 띄어쓰기 없이 길게 입력하면 width를 주어도
+		박스밖으로 튀어나오게 된다.
+		이때, 박스에 맞춰서 적당히 잘라 다음줄로 내려오도록 해준다.
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{margin: 0; padding: 0;}
+	body{
+		font: 12px 굴림,Gulim;
+		margin: 20px;
+	}
+	div {
+		width: 12em;
+		padding: 10px;
+		background-color: lightblue;
+	}
+	#wrap{
+		word-wrap: break-word;
+	}
+</style>
+</head>
+<body>
+	<div>
+		이 문장은 매우 긴 단어를 포함하고 있습니다.
+		dfsajhdfsadfsakdsfkjsdfasdfahksafdhsfadksdfakj
+		영문을 띄어쓰기 없이 길게 입력하면 width값을 주어도 밖으로 넘칩니다.
+	</div>
+	<div id="wrap">
+		이 문장은 매우 긴 단어를 포함하고 있습니다.
+		dfsajhdfsadfsakdsfkjsdfasdfahksafdhsfadksdfakj
+		word-wrap속성으로 인해, 긴 단어는 잘려서 다음줄로 내려갑니다.
+	</div>
+</body>
+</html>

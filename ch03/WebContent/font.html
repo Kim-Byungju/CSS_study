@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+	서체(font) : font:style weight size family 
+		.font-style  >italic,normal,oblique
+		.font-weight >굵기
+		.font-size	>크기
+		.font=family > 굴림체,TimesNewRoman,궁서체
+		*web font 
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{font-size: 30px;}
+	#a{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+	#b{font-family: Arial;}
+	#c{font-family: serif;}
+	#d{font-family: 궁서체;}
+	#e{font-family: 굴림체;}
+
+	#f{font: italic bolder 80px 궁서체,serif, "Times New Roman";}
+	div{
+		width:700px; height: 600px;
+		background: yellowgreen url('./img/2.jpg');
+	}
+</style>
+</head>
+<body>
+	<p id="a">폰트 속성입니다.</p>
+	<p id="b">폰트 속성입니다.</p>
+	<p id="c">폰트 속성입니다.</p>
+	<p id="d">폰트 속성입니다.</p>
+	<p id="e">폰트 속성입니다.</p>
+	<hr>
+	<p id="f">폰트일괄지정</p>
+	<div></div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 
+	문자효과
+		-그림자, 줄바꿈, 글꼴지정
+
+		1. text-shadow:그림자
+
+			text-shadow: x축, y축, 퍼짐, 색상
+		2. word-wrap
+		3. font-face
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{margin: 0; padding: 0;}
+	li{list-style: none;}
+	body{font-size: 12px arial;}
+
+	h1{
+		color: white;
+		text-shadow: 1px 1px 7px red;
+	}
+	h2{
+		text-shadow: 3px 3px 3px cyan;
+	}
+	#a{
+		text-align: center;
+		background: lightgray;
+	}
+	#b{
+		text-align: center;
+		background: gray;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>상상이 현실이 되기위해서는 반드시 번데기 시절이 필요하다.</h1>
+	<h2>let's do it together</h2>
+	<h3 id="a">drop shadow(그림자)</h3>
+	<h4 id="b">grow(광채)</h4>
+	<h5 id="c">Bevel(도두라짐)</h5>
+	<h1 id="d">embos(오목새김)</h1>
+	<h2 id="e">strock</h2>
+	<h3 id="f">neon(발광)</h3>
+</body>
+</html>

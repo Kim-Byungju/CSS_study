@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 
+	.text-family : Helvetica, sans-serif
+	.letter-spacing: 글자간격
+	.word-spacing: 단어간격
+	.line-height : 줄간격
+	.text-align :텍스트수평정렬
+	.vertical-align :텍스트수직정렬
+	.text-indent : 들여쓰기
+	.text-decoration: 텍스트 장식지정
+	.text-transform: 대소문자전환
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{
+		font-size: 16px;
+		letter-spacing: -0.1em;
+	}
+	span{
+		font-size: 1em;
+	}
+	#main>p:first-child::first-letter{
+		font-size: 50pt;
+
+	}
+	#main>p:first-child{
+		background-color: yellow;
+		
+	}
+		#main>p:nth-child(2){
+		letter-spacing: 1em;
+		
+	}
+		#main>p:nth-child(3){
+		letter-spacing: 1rem;
+		
+	}
+		#main>p:nth-child(6){
+		text-decoration: line-through;
+		
+	}
+		#main>p:nth-child(5){
+		line-height: 2em;
+		word-spacing: 2em;
+		text-indent: 100px;
+		
+	}
+		#main>p:nth-child(7){
+		line-height: 2em;
+		word-spacing: 2em;
+		text-transform: uppercase;
+		
+	}
+	
+</style>
+</head>
+<body id ="main">
+
+	<!-- 
+	body에 글자크기 16px. 글자간의 간격을 -0.1em
+	1.1번째 글자를 50pt,blue,배경색은 노랑색
+	2.글자간의 간격을 1em
+	3.글자간의 간격을 1rem
+
+	4~6. 짝수줄의 줄간격 높이를 2em, 단어간격을  2em
+	4줄. 마지막줄을 들여쓰기해본다.
+	5줄: 밑줄긋기
+	6줄 : word소문자 -> 대문자
+ -->
+
+	<p>letter(글자)간의 간격을 조정해 봅시다.</p>
+	<p><span>letter(글자)간의 간격을 조정해 봅시다.</span></p>
+	<p>letter(글자)간의 간격을 조정해 봅시다.</p>
+
+	<hr>
+	<p>word(단어)간의 간격을 조정해 봅니다.</p>
+	<p>word(단어)간의 간격을 조정해 봅니다.</p>
+	<p>word(단어)간의 간격을 조정해 봅니다.</p>
+</body>
+</html>

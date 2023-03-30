@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 
+	text-transform
+		.none
+		.capitalize:첫글자 대문자
+		.Uppercase:모두대문자
+		.lowercase:모두소문자
+	text-variant
+		.none
+		.small-caps:작은글자의 대문자로
+		.inherit: 부모기본 값을 강제상속
+		.initial:기본값
+
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	#a{text-transform: capitalize;}
+	#b{text-transform: uppercase;}
+	#c{text-transform: lowercase;}
+	#d>font{text-transform: uppercase;}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 첫글자 대문자 -->
+	<p id="a">life is a venture or nothing</p>
+	<!-- 모두 대문자 -->
+	<p id="b">a rolling stone gathers no moss</p>
+	<!-- 모두 소문자 -->
+	<p id="c">PUT OFF FOR ONE DAY AND THEN DAYS WILL PASS</p>
+	<!-- 상속 >작은 대문자 -->
+	<P id="d"><font>a rolling stone gathers no moss</font></P>
+</body>
+</html>
