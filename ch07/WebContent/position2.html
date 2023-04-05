@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 
+	.절대배치는 지정하게되면 현재 붙어있는 칸에서 떨어져있다가 뜬상태가 된다.
+	.절대배치는 부모가 static이면 브라우저 상단 모서리를 기준으로 배치된다.
+	.그래서..절대배치를 적용하고자 한다면 부모에 relative나 absolute를 설정하고 사용함을 고려해야한다.
+	.절대배치는 후속박스의 레이아웃에 영향을준다.
+	.상대배치 현재의 내위치를 기준으로 얼만큼 이동할것인지를 놓고 배치하는것이다.
+	.후속박스의 레이아웃에 영향을 주지않는다.
+	.float 레이아웃과 함께 사용할수 없다.
+
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		
+	}
+	#box1{
+		background-color: gray;
+	}
+	#box2{
+		background-color: burlywood;
+		margin: 0;
+	}
+	#box3{
+		background-color: mediumslateblue;
+		margin: 0 10px;
+
+		position: relative;
+		left: 100px;
+		right: 100px;
+	}
+	#box4{
+		background-color: chartreuse;
+		margin: 0 20px;
+	}
+	#box5{
+		background-color: cyan;
+	}
+	#container{
+		width: 300px;
+		height: 200px;
+		margin: 0 10px;
+		border: 2px black dashed ;
+
+		position: absolute;
+		left: px;
+		right: 50px;
+		top: px;
+	}
+</style>
+</head>
+<body>
+	<div id="box1">BOX1</div>
+	<div id="container">
+		<div id="box2">BOX2</div>
+		<div id="box3">BOX3</div>
+		<div id="box4">BOX4</div>
+	</div>
+	<div id="box5">BOX5</div>
+</body>
+</html>

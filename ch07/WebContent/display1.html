@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+	레이아웃관련 속성들 ------잘 숙지하실것! 
+		. display   : inline, block, inline-block, table, flex
+		. position  : static, absolute, relative, fixed
+		. float     : left, right, clear,
+		. z-index   : 계층이 중첩 되어있을떄.. 큰값이 위로 올라온다.
+		. visibility: visible, hidden 
+		. overflow	: auto, visible, hidden, scroll
+		. px, %		
+	
+	박스유형
+		. 블록박스 : display:block		- h, div, ul, ol, li, table, form
+									 시맨틱태그들, hr, fieldset, address 등
+									 . 항상 새로운 라인에서 시작한다.
+									 . width,height으로 크기조절 가능하다.
+									 . margin border padding 조절가능
+
+		. 인라인박스: display:inline - span, em, sub, sup, a, img, input
+					. 라인속에 배치된다.
+					. width, height을 적용할수 없다.
+					. margin, border, padding 적용불가
+
+		. 인라인블록: display:inline-block
+					. 새로운라인에서 시작하지 못함(라인속에 배치)
+					. 모든박스안에 배치가능
+					. 옆에 다른요소를 배치가능
+					. width와 height을 적용가능
+					. margin, padding 적용가능
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	ul{
+		background: lightblue;
+		margin: 0;
+		padding: 10px;
+		width: 1000px;
+		list-style: none;
+	}
+	li{
+		
+		display: inline-block;
+		width: 200px;
+		height: 100px;
+		background-color: antiquewhite;
+		text-align: center;
+	}
+	a{
+		background: sandybrown;
+	}
+</style>
+</head>
+<body>
+	<h3>HTML5 웹프로그래밍</h3>
+	<hr>
+	<ul>
+		<li><a href="#home">home</a></li>
+		<li><a href="#">HTML</a></li>
+		<li><a href="#">CSS3</a></li>
+		<li><a href="#">JAVASCRIPT</a></li>
+	</ul>
+</body>
+</html>
