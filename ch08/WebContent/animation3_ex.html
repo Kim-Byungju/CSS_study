@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	div{
+		width: 200px;
+		height: 17px;
+		background-color: darkseagreen;
+		margin-bottom: 2px;
+		padding: 3px;
+		text-decoration: underline;
+		transition: 1s ease-in;
+	}
+	div:hover{
+		color: red;
+		width: 300px;
+	}
+	nav{
+		display: inline-block;
+		padding: 5px;
+		background-color: cornflowerblue;
+		text-decoration: underline;
+		transition: 3s linear;
+
+	}
+	nav:hover{
+		font-size: 100%;
+		color: red;
+	}
+	span{
+		background-color: darkgray;
+		font-size: 50px;
+		animation: fontchange 5s infinite;
+
+	}
+	@keyframes fontchange {
+		20%{
+			color: blue;
+		}
+		30%{
+			color: green;
+		}
+		50%{
+			color: red;
+		}
+	}
+</style>
+</head>
+<body>
+<h1>Moving Main Menu</h1>
+	<div id="company">COMPANY</div>
+	<div id="product">PRODUCT</div>
+	<div id="service">SERVICE</div>
+	<div id="cs">CUSTOMER SUPPORT</div>
+	<div id="community">COMMUNITY</div><br><br>
+	<hr>
+<h1>changing Utilmenu</h1>
+	<nav id="a">HOME</nav>
+	<nav id="b">JOIN</nav>
+	<nav id="c">SITEMAP</nav><br><br>
+	<hr>
+	<span>span</span>텍스트를 5초에 blue, green, red로 무한반복합니다.
+
+</body>
+</html>

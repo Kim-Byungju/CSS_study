@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	li{
+		list-style: none;
+		display: inline-block;
+		padding: 5px;
+	}
+	img{
+		width: 300px;
+		height: 300px;
+	}
+	.caption{
+		color: white;
+		text-align: center;
+		position: absolute;
+		background: rgba(0, 0, 0, 1);
+		padding-top: 80px;
+		width: 300px;
+		height: 210px;
+		opacity: 0;
+		
+		z-index: 10;
+		transition:  0.5s linear;
+		
+	
+		
+		/* animation: captionchange 10s infinite; */
+	}
+
+	li:hover .caption{
+		transform: translate(0,-290px);
+		animation: captionchange 2s ;
+		
+	}
+	@keyframes captionchange{
+		100%{
+			opacity: 1.0;
+		}
+		
+	} 
+
+</style>
+</head>
+<body>
+	<h1>신상품 목록</h1>
+	<div id="container">
+		<ul class="prod-list">
+			<li>
+				<img src="./img/지구.jpg">
+				<div class="caption">
+					<h1>지구</h1>
+					<p>지구: 사람들이 사는곳 </p>
+					<p>가격 : 45억년</p>
+				</div>
+			</li>
+			<li>
+			<img src="./img/태양.jpg">
+				<div class="caption">
+					<h1>태양</h1>
+					<p>태양: 태양계의 중심</p>
+					<p>가격 : 46억년</p>
+				</div>
+			</li>
+			<li>
+			<img src="./img/달.jpg">
+				<div class="caption">
+					<h1>달</h1>
+					<p>달: 지구의 위성</p>
+					<p>가격 : 45억년</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

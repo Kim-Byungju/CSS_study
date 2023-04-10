@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div[id]{
+		display: inline-block;
+		padding: 5px;
+		color: white;
+		background: olivedrab;
+	}
+	img{
+		width: 400px;
+		height: 400px;
+		border-radius: 50% 50%;
+		border: 1px solid black
+	}
+	#rotate{transform: rotate(20deg);}
+	#rotate:hover{transform: rotate(80deg);}
+
+	img[alt]{
+		/* transform: translate(30px,50px);
+		transform: scale(1.5,1.7);
+		transform: rotate(90deg); */
+		animation: myanimation1 10s linear 2s 3;
+		animation-iteration-count: infinite;
+	}
+	
+
+	@keyframes myanimation1 {
+		20%{
+			transform: translate(30px, 50px);
+		}
+		40%{
+			transform: scale(1.5,1.5);
+		}
+		10%{
+			transform: rotate(360deg);
+		}
+		10%{
+			width: 500px;
+		}
+		20%{
+			height: 500px;
+		}
+	}
+</style>
+</head>
+<body>
+	<h3>다양한 Transform</h3>
+	아래는 회전(rotate), 기울임(skew), 이동(translate), 확대/축소(scale)가 적용된 사례이다. 또한 마우스를 올리면 추가적 변환이 일어난다.
+	<hr>
+	<div id="rotate">rotate 20deg</div>
+	<div id="skew">skew(0,-20deg)</div>
+	<div id="translate">translate(100px)</div>
+	<div id="scale">scale(3,1)</div>
+
+	<img alt="" src="./img/티벳여우3.jpg">
+</body>
+</html>

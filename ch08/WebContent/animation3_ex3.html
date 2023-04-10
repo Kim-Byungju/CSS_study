@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{margin: 0; padding: 0;}
+	body{
+		background-image: url('./img/street.jpg');
+	}
+	li{
+		list-style: none;
+		margin-bottom: 50px;
+		margin-top: 20px;
+		margin-left: 20px;
+		padding-top: 20px;
+		
+	}
+	#side{
+		text-align: left;
+		text-decoration: underline;
+		background-color: orangered;
+		height: 1000px;
+		width : 130px;
+		opacity: 0.6;
+		color: blue;
+		
+		transform: translate(-120px);	
+		transition: 1s ease-in;
+
+	}
+	#side:hover{
+		transform: translate(0px);
+	}
+	
+</style>
+</head>
+<body>
+	<div id="menubar">
+		<ul id="side">
+			<li>라면</li>
+			<li>짜장면</li>
+			<li>짬뽕</li>
+			<li>너구리</li>
+		</ul>
+	</div>
+</body>
+</html>
